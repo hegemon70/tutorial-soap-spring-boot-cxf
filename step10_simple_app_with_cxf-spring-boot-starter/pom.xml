@@ -28,7 +28,7 @@
 		<dependency>
 			<groupId>de.codecentric</groupId>
 			<artifactId>cxf-spring-boot-starter</artifactId>
-			<version>1.0.7.RELEASE</version>
+			<version>1.1.5.RELEASE</version>
 		</dependency>
 
 		<dependency>
