@@ -3,6 +3,46 @@ Tutorial how to create, test, deploy, monitor SOAP-Webservices using [Spring Boo
 
 Every following step builds upon the preceding one. So if you start e.g. with step 3, you´ll have all of step 1 & 2 covered in the code.
 
+## 🚀 Cómo Empezar / Getting Started
+
+Este proyecto incluye un **Makefile** para facilitar el uso y ejecución de los diferentes pasos del tutorial.
+
+### Uso del Makefile
+
+Para ver todos los comandos disponibles, ejecuta:
+```bash
+make help
+```
+
+### Comandos Principales
+
+**Construir el proyecto:**
+```bash
+make build
+```
+
+**Ejecutar un paso específico del tutorial:**
+```bash
+make run-step1    # Ejecutar Step 1
+make run-step3    # Ejecutar Step 3
+make run-step10   # Ejecutar Step 10
+```
+
+**Generar clases desde WSDL (Step 2):**
+```bash
+make generate-step2
+```
+
+**Limpiar artefactos de construcción:**
+```bash
+make clean
+```
+
+**Ejecutar tests:**
+```bash
+make test
+```
+
 ### The Steps 1-3: published accompanying the blog-posts: [Spring Boot & Apache CXF – How to SOAP in 2016](https://blog.codecentric.de/en/2016/02/spring-boot-apache-cxf/) (or german version: [Spring Boot & Apache CXF – SOAP ohne XML?](https://blog.codecentric.de/2016/02/spring-boot-apache-cxf/) )
 
 [step1_simple_springboot_app_with_cxf](https://github.com/jonashackt/tutorial-soap-spring-boot-cxf/tree/master/step1_simple_springboot_app_with_cxf)
