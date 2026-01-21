@@ -1,7 +1,7 @@
 # Makefile for tutorial-soap-spring-boot-cxf
 # Este Makefile ayuda a empezar con el proyecto tutorial de SOAP con Spring Boot y Apache CXF
 
-.PHONY: help build clean test run-step1 run-step2 run-step3 run-step4 run-step5 run-step6 run-step7 run-step8 run-step9 run-step10 install
+.PHONY: help build clean test run-step1 run-step2 run-step3 run-step4 run-step5 run-step6 run-step7 run-step8 run-step9 run-step10 install generate-step2
 
 # Colores para la salida
 BLUE := \033[0;34m
@@ -75,7 +75,8 @@ run-step1:
 # Ejecutar Step 2
 run-step2:
 	@echo "$(GREEN)Step 2 es un paso de generación de código.$(NC)"
-	@echo "$(YELLOW)Usa 'make generate-step2' para generar las clases JAXB$(NC)"
+	@echo "$(YELLOW)Ejecutando generación de clases JAXB desde WSDL...$(NC)"
+	@$(MAKE) generate-step2
 
 # Ejecutar Step 3
 run-step3:
